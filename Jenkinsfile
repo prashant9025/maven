@@ -20,8 +20,7 @@ node('master')
     stage('ContinuousDelivery')
     {
        input message: 'Waiting for Approval from your DM', submitter: 'amol'
-       sh 'scp /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war ubuntu@172.31.40.47:/var/lib/tomcat9/webapps/prodapp.war'
-    }
+       sh 'scp /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war ubuntu@172.31.40.47:/var/lib/tomcat9/webapps/prodapp.war'   }
     
     
 }
